@@ -1,0 +1,29 @@
+/* Los Jalapeños website styles. Most styling is inline in index.html. */
+body{margin:0;background:#fbf6ec}
+a{color:#c3313d}a:hover{color:#9e2530}
+.topnav{display:flex}
+.mbar{display:none}
+.navlink:hover{color:#c3313d !important}
+.gold:hover{background:#f2b636 !important}
+.btn-red:hover{background:#9e2530 !important}
+.catbtn:hover{background:#f4ead8 !important}
+.pick:hover img{transform:scale(1.04)}
+.pick img{transition:transform .3s ease}
+.infocell{border-left:1px solid #e0d1b8}
+.infocell:first-child{border-left:none}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid #1f6a40;outline-offset:2px}
+@media (prefers-reduced-motion: reduce){.pick img{transition:none}}
+@media (max-width: 760px){
+.topnav{display:none}
+.mbar{display:grid}
+.side{flex-direction:row !important;overflow-x:auto;flex-wrap:nowrap !important}
+.side button{flex:0 0 auto;white-space:nowrap}
+.infocell{border-left:none;padding:18px 8px !important}
+.infocell:nth-child(n+3){border-top:1px solid #e0d1b8}
+.hdr{grid-template-columns:auto 1fr !important}
+.hdr .logo{grid-column:1 !important;align-items:flex-start !important}
+.hdr .acts{grid-column:2 !important}
+.hideSm{display:none !important}
+}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
